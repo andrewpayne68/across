@@ -9,18 +9,17 @@ KMS is the abbreviation of Key Management System, which is the key management sy
 This article is based on this open source code, and has developed a script for the one-key installation of KMS service for the three major Linux distribution editions.
 
 The environment of this script
-System support: CentOS 6+, Debian 7+, Ubuntu 12+
-Virtual technology: any
-Storage requirements: ≥128M
-Date: December 19th 2023
++ System support: CentOS 6+, Debian 7+, Ubuntu 12+
++ Virtual technology: any
++ Storage requirements: ≥128M
 
 
-## About this script
-1. This script supports Debian, Ubuntu and CentOS (Server/Command Line Linux editions).
+### About this script
+1. This script supports Debian 7+, Ubuntu 12+ and CentOS 8+ (Server/Command Line Linux editions).
 2. After the KMS service is installed, it will be added to the boot itself.
 3. The default record log, which is located in /var/log/vlmcsd.log.
 
-## Method of Use
+### Method of Use
 Use root user login to run the following commands：
 ```
 wget --no-check-certificate https://github.com/teddysun/across/raw/master/kms.sh &" chmod +x kms.sh &"./kms.sh
@@ -36,19 +35,19 @@ tcp        00:::1688:::*                        LISTEN      3200/vlmcsd
 
 After the installation of this script is completed, the KMS service will be added to the boot itself.
 
-## Use command：
+### Use command：
 Start:/etc/init.d/kms start
 Stop:/etc/init.d/kms stop
 Restart:/etc/init.d/kms restart
 Status:/etc/init.d/kms status
 
-## Uninstallation method：
+### Uninstallation method：
 Use root user login to run the following commands：
 ```
 ./kms.sh uninstall
 ```
 
-## How to use KMS service
+### How to use KMS service
 KMS service, used to activate the Windows and Office of the VOL version online.
 The premise of activation is that your system is a batch authorized version, that is, the VL version, and the general enterprise version is the VL version. The VL version of the mirror generally contains GVLK key for KMS activation.
 The VL version of the product contained in the following list or the product that can use key to enter the KMS channel supports the use of KMS activation.
@@ -96,7 +95,7 @@ note： KMS method activation, which is only valid for 180 days.
 
 Every once in a while, the system will automatically request a renewal from the KMS server, please ensure that your own KMS service is operating normally.
 
-## FAQ
+### FAQ
 If you encounter errors, please check the following：
 1. Is your KMS server hung？
 2. Is your KMS service open normally？

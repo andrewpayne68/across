@@ -22,8 +22,9 @@ About this script
 
 method of use
 Use root user login to run the following commands：
-
-wget --no-check-certificate https://github.com/teddysun/across/raw/master/kms.sh &" chmod +x kms.sh &"./kms.sh 
+```
+wget --no-check-certificate https://github.com/teddysun/across/raw/master/kms.sh &" chmod +x kms.sh &"./kms.sh
+```
 After the installation is completed, enter the following order to check the monitoring of the port slogan 1688
 
 netstat -nxtlp | grep 1688

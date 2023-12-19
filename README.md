@@ -29,10 +29,10 @@ After the installation is completed, enter the following order to check the moni
 netstat -nxtlp | grep 1688
 ```
 The return value is similar to the following, which means OK：
-
+```
 tcp        000.0.0.0:16880.0.0.0:*                   LISTEN      3200/vlmcsd                                
 tcp        00:::1688:::*                        LISTEN      3200/vlmcsd  
-
+```
 After the installation of this script is completed, the KMS service will be added to the boot itself.
 
 ### Use command：

@@ -16,7 +16,7 @@ Date: December 19th 2023
 
 
 ## About this script
-1. This script applies to the three major Linux distribution editions, while other versions do not support it.
+1. This script supports Debian, Ubuntu and CentOS (Server/Command Line Linux editions).
 2. After the KMS service is installed, it will be added to the boot itself.
 3. The default record log, which is located in /var/log/vlmcsd.log.
 

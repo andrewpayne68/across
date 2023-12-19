@@ -5,8 +5,7 @@
 - OG Intro: https://teddysun.com/530.html
 - KMS Server Docker Image: https://hub.docker.com/r/teddysun/kms
 
-KMS is the abbreviation of Key Management System, which is the key management system. The KMS mentioned here is undoubtedly the Windows and Office KMS used to activate the VOL version. You can often see the KMS server address provided by someone online, so have you ever thought that you will also come up with such a service？And such services already exist on GithubOpen source codeRealized.
-This article is based on this open source code, and has developed a script for the one-key installation of KMS service for the three major Linux distribution editions.
+KMS is the abbreviation of Key Management System, a software management system used to activate volume editions of Microsoft Windows and Office.
 
 The environment of this script
 + System support: CentOS 6+, Debian 7+, Ubuntu 12+

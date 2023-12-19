@@ -53,7 +53,7 @@ KMS service, used to activate the Windows and Office of the VOL version online.
 The premise of activation is that your system is a batch authorized version, that is, the VL version, and the general enterprise version is the VL version. The VL version of the mirror generally contains GVLK key for KMS activation.
 The VL version of the product contained in the following list or the product that can use key to enter the KMS channel supports the use of KMS activation.
 
-Office 2019 & Office 2016：https://docs.microsoft.com/en-us/DeployOffice/vlactivation/gvlks
+Office 2021 LTSC, 2019 & Office 2016：https://docs.microsoft.com/en-us/DeployOffice/vlactivation/gvlks
 Office 2013：https://technet.microsoft.com/zh-cn/library/dn385360.aspx
 Office 2010：https://technet.microsoft.com/zh-cn/library/ee624355(v=office.14).aspx
 Windows：https://docs.microsoft.com/zh-cn/windows-server/get-started/kmsclientkeys

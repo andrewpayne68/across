@@ -15,12 +15,12 @@ Storage requirements: ≥128M
 Date: December 19th 2023
 
 
-About this script
+## About this script
 1. This script applies to the three major Linux distribution editions, while other versions do not support it.
 2. After the KMS service is installed, it will be added to the boot itself.
 3. The default record log, which is located in /var/log/vlmcsd.log.
 
-Method of Use
+## Method of Use
 Use root user login to run the following commands：
 ```
 wget --no-check-certificate https://github.com/teddysun/across/raw/master/kms.sh &" chmod +x kms.sh &"./kms.sh
@@ -36,19 +36,19 @@ tcp        00:::1688:::*                        LISTEN      3200/vlmcsd
 
 After the installation of this script is completed, the KMS service will be added to the boot itself.
 
-Use command：
+## Use command：
 Start:/etc/init.d/kms start
 Stop:/etc/init.d/kms stop
 Restart:/etc/init.d/kms restart
 Status:/etc/init.d/kms status
 
-Unloading method：
+## Uninstallation method：
 Use root user login to run the following commands：
 ```
 ./kms.sh uninstall
 ```
 
-How to use KMS service
+## How to use KMS service
 KMS service, used to activate the Windows and Office of the VOL version online.
 The premise of activation is that your system is a batch authorized version, that is, the VL version, and the general enterprise version is the VL version. The VL version of the mirror generally contains GVLK key for KMS activation.
 The VL version of the product contained in the following list or the product that can use key to enter the KMS channel supports the use of KMS activation.

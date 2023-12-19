@@ -2,8 +2,8 @@
 ## kms.sh
 
 - Description: Auto install KMS Server
-- Intro: https://teddysun.com/530.html
-- **KMS Server Docker Image**: https://hub.docker.com/r/teddysun/kms
+- OG Intro: https://teddysun.com/530.html
+- KMS Server Docker Image: https://hub.docker.com/r/teddysun/kms
 
 KMS is the abbreviation of Key Management System, which is the key management system. The KMS mentioned here is undoubtedly the Windows and Office KMS used to activate the VOL version. You can often see the KMS server address provided by someone online, so have you ever thought that you will also come up with such a service？And such services already exist on GithubOpen source codeRealized.
 This article is based on this open source code, and has developed a script for the one-key installation of KMS service for the three major Linux distribution editions.
@@ -12,7 +12,7 @@ The environment of this script
 System support: CentOS 6+, Debian 7+, Ubuntu 12+
 Virtual technology: any
 Storage requirements: ≥128M
-Date: October 25, 2018
+Date: December 19th 2023
 
 
 About this script
@@ -20,7 +20,7 @@ About this script
 2. After the KMS service is installed, it will be added to the boot itself.
 3. The default record log, which is located in /var/log/vlmcsd.log.
 
-method of use
+Method of Use
 Use root user login to run the following commands：
 ```
 wget --no-check-certificate https://github.com/teddysun/across/raw/master/kms.sh &" chmod +x kms.sh &"./kms.sh

@@ -25,13 +25,15 @@ Use root user login to run the following commands：
 ```
 wget --no-check-certificate https://github.com/teddysun/across/raw/master/kms.sh &" chmod +x kms.sh &"./kms.sh
 ```
-After the installation is completed, enter the following order to check the monitoring of the port slogan 1688
-
+After the installation is completed, enter the following order to check the monitoring of TCP port 1688
+```
 netstat -nxtlp | grep 1688
+```
 The return value is similar to the following, which means OK：
 
 tcp        000.0.0.0:16880.0.0.0:*                   LISTEN      3200/vlmcsd                                
-tcp        00:::1688:::*                        LISTEN      3200/vlmcsd                             
+tcp        00:::1688:::*                        LISTEN      3200/vlmcsd  
+
 After the installation of this script is completed, the KMS service will be added to the boot itself.
 
 Use command：
@@ -42,8 +44,10 @@ Status:/etc/init.d/kms status
 
 Unloading method：
 Use root user login to run the following commands：
-
+```
 ./kms.sh uninstall
+```
+
 How to use KMS service
 KMS service, used to activate the Windows and Office of the VOL version online.
 The premise of activation is that your system is a batch authorized version, that is, the VL version, and the general enterprise version is the VL version. The VL version of the mirror generally contains GVLK key for KMS activation.
@@ -55,18 +59,23 @@ Office 2010：https://technet.microsoft.com/zh-cn/library/ee624355(v=office.14).
 Windows：https://docs.microsoft.com/zh-cn/windows-server/get-started/kmsclientkeys
 
 Use administrator permission to run cmd to view the system version, the command is as follows：
-
+```
 wmic os get caption
+```
 Use administrator permission to run cmd to install the key obtained from the above list, the order is as follows：
-
+```
 slmgr /ipk xxxxx-xxxxxx-xxxxxx-xxxxxx-xxxxxx
+```
+
 Use administrator permission to run cmd to set the KMS server address as your own IP or domain name. It is best to add the end slogan （:1688） to the back. The order is as follows：
 
 slmgr /skms Your IP or Domain:1688
 note：This step is the work done in this script. When your KMS service is out of start-up state, you can set up your own KMS server address here.
 Use administrator permission to run cmd manual activation system, the commands are as follows：
-
+```
 slmgr /ato
+```
+
 Regarding the activation of the Office, the requirement must be the VOL version, otherwise it cannot be activated.
 Find your office installation catalog, 32 defaults are generally C:\Program Files (x86)\Microsoft Office\Office16
 64 defaults are generally C:\Program Files\Microsoft Office\Office16
@@ -76,12 +85,15 @@ Use administrator permission to run cmd into the Office Directory, the commands 
 
 cd "C:\Program Files (x86)\Microsoft Office\Office16"
 Use administrator permission to run cmd registered KMS server address：
-
+```
 cscript ospp.vbs /sethst:Your IP or Domain
+```
 Use administrator permission to run cmd manual activation Office, the order is as follows：
-
+```
 cscript ospp.vbs /act
+```
 note： KMS method activation, which is only valid for 180 days.
+
 Every once in a while, the system will automatically request a renewal from the KMS server, please ensure that your own KMS service is operating normally.
 
 Commonly wrong countermeasures

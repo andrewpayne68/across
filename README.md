@@ -96,8 +96,8 @@ note： KMS method activation, which is only valid for 180 days.
 
 Every once in a while, the system will automatically request a renewal from the KMS server, please ensure that your own KMS service is operating normally.
 
-Commonly wrong countermeasures
-If you encounter a mistake in the execution process, please check according to the following steps：
+## FAQ
+If you encounter errors, please check the following：
 1. Is your KMS server hung？
 2. Is your KMS service open normally？
 3. Is your system or office a batch VL version？
@@ -107,8 +107,6 @@ If you encounter a mistake in the execution process, please check according to t
 7. Is your local DNS analysis normal？
 8. If you rule out the above countermeasures, please search for the reasons by the error prompt code.
 
-Update log
-October 25, 2018：Correct the git link of vlmcsd, that is, each new installation is the latest official version. Note: If you want to upgrade the version, you need to stop the kms service first, then delete the /usr/bin/vlmcsd file, and then download the latest script installation.
 
-Reference link
+## Reference link
 https://03k.org/kms.html

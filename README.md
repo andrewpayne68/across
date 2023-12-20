@@ -1,8 +1,8 @@
 
-## kms.sh
+## KMS Linux Server
 
-- Description: Auto install KMS Server
-- OG Intro: https://teddysun.com/530.html
+- Description: Auto install KMS Server on a Linux server
+- OG Intro: https://teddysun.com/530.html (Mandarin)
 - KMS Server Docker Image: https://hub.docker.com/r/teddysun/kms
 
 KMS is the abbreviation of Key Management System, a software management system used to activate volume editions of Microsoft Windows and Office.
